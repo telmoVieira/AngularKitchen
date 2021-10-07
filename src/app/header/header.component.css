@@ -1,0 +1,15 @@
+#tenor{
+    max-width: 100px;
+    max-height: 100px;  
+    margin-left: 500px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.aHeader{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 15px;
+    color: black !important;
+}

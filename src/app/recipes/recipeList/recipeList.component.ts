@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -7,13 +7,21 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipeList.component.css']
 })
 export class RecipeListComponent implements OnInit {
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
-    new Recipe('Receitas do Telmo', 'As Melhores receitas de casa', 'https://thumbs.dreamstime.com/b/cozinheiro-chefe-holding-dos-desenhos-animados-um-livro-da-receita-e-ilustra%C3%A7%C3%A3o-quente-do-vetor-bebida-energia-102698413.jpg')
+    new Recipe('Arroz de Pato', 'A melhor receita de arroz de pato esta aqui', 
+    'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/101C5A5D-C290-4A58-B372-A0100BC48778/Derivates/1FAC3616-88EB-4B3F-B68A-7B0CB5DAF2C9.jpg'),
+    new Recipe('Sopa de Cação', 'As Melhores receitas de casa', 
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3ac6RrNth8XD-F1qFIjs9ZkIbnKPlhb6hw&usqp=CAU')  
   ];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onRecipeSelected(recipe: Recipe) {
+    this.recipeWasSelected.emit(recipe);
   }
 
 }
