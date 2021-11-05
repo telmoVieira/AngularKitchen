@@ -21,6 +21,8 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import { RecipeAddComponent } from './recipes/recipe-add/recipe-add.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { RecipeService } from './recipes/recipes.service';
+import { AuthComponent } from './auth/auth.component';
+import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { RecipeService } from './recipes/recipes.service';
     DropdownDirective,
     RecipeStartComponent,
     RecipeAddComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    AuthComponent,
+    loadingSpinnerComponent
 
   ],
   imports: [
