@@ -1,0 +1,4 @@
+Falta fazer a mensagem de sucesso para o login como esta feita a de sign up
+
+
+https://console.firebase.google.com/project/ng-course-recipe-book-9e826/authentication/users
