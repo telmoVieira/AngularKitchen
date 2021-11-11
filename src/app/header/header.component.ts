@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit, OnDestroy{
   isAuthenticated = false;
   private userSub: Subscription;
 
-  header = "/assets/tenor.gif";
+  header = "/assets/hesimpsons-cooking.gif";
 
   constructor(private dataStorageService: DataStorageService, private authService: AuthService) {}
 

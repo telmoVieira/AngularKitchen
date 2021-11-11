@@ -1,4 +1,4 @@
-Falta fazer a mensagem de sucesso para o login como esta feita a de sign up
-
+Ajeitar as mensagem de login e sign up sucess para so aparecer se o caso for mesmo de sucesso e nao parecer quando vai aparecer a mensagem de erro
+como esta feito o alert no auth component
 
 https://console.firebase.google.com/project/ng-course-recipe-book-9e826/authentication/users
